@@ -1,0 +1,329 @@
+/*CUERPO HEADER Y FOOTER*/
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+  border-radius: 50%;
+  animation: snowfall linear infinite;
+}
+
+
+@keyframes snowfall {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(70vh);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Parkinsans" , sans-serif;
+  background-color: #303030;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.menu {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  background-color: #AEEEEE;
+  border-bottom: 1px solid #000000;
+}
+
+.logo-text {
+  color: blue;
+  font-size: 25px;
+  font-weight: 800;
+  margin-left: 50px;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #ffffff;
+  display: block;
+}
+.menu .navbar ul li a:hover {
+  color: blue;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+.menu label {
+  display: none;
+  cursor: pointer;
+}
+
+.footer{
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+  border-top: 1px solid #00000029;
+  background-color: #AEEEEE;
+}
+
+.footer h3 {
+  color: blue;
+  font-size: 30px;
+  font-weight: 800 ;
+  margin: 20px;
+}
+
+.footer .icon {
+  margin: 80px;
+  padding: 20px;
+}
+
+/*INDEX.CSS*/
+.index .index-header {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.index .header {
+  background-image: url(/img/img-5.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.tittle {
+  color: blue;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.index-info p {
+  color: #ffffff;
+  font-size: 22px;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 10px;
+  background-color: #AEEEEE;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.btn-1:hover {
+  background-color: blue;
+}
+.frost {
+  margin: 20px;
+  padding:  50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.frost-1 {
+  width: 50%;
+  text-align: center;
+}
+.frost-1 h2 {
+  font-size: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.frost-1 p {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.frost-1 span {
+  color: blue;
+}
+.frost-2 p {
+  margin: 10px;
+  padding: 0;
+  text-align: center;
+}
+
+.btn-2, .btn-3, .btn-4, .btn-5 {
+  display: inline-block;
+  padding: 8px 40px;
+  margin: 0 60px 40px 60px;
+  border-radius: 20px;
+  background-color: #AEEEEE;
+  font-size: 18px;
+  color:#ffffff;
+  text-transform: uppercase;
+}
+
+.btn-2:hover, .btn-3:hover, .btn-4:hover, .btn-5:hover {
+  background-color: blue;
+}
+.btn-2:focus, .btn-3:focus, .btn-4:focus {
+  outline: 2px dashed blue;
+  outline-offset: 5px;
+}
+.img-1, .img-2 {
+  width: 45%;
+  height: 30vh;
+  margin-left: 3%;
+}
+.img-3, .img-4 {
+  width: 45%;
+  height: 30vh;
+  margin-right: 3%; 
+}
+
+
+/*CLIENTS CSS*/
+.section h1.tittle {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.section ul {
+  display: grid; /* Hacer una cuadrícula */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adaptable al tamaño */
+  gap: 20px; /* Espaciado entre los cuadros */
+  list-style: none; /* Eliminar viñetas */
+  padding: 0; /* Eliminar padding */
+  margin: 10px 10px 10px 20px; /* Centrar horizontalmente */
+}
+
+/* Estilo para los cuadros individuales */
+.client {
+  text-align: center; /* Centrar contenido en el cuadro */
+  border: 1px solid #ccc; /* Borde alrededor del cuadro */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 15px; /* Espaciado interno */
+  background-color: #AEEEEE; /* Fondo claro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el mouse */
+}
+
+/* Animación al pasar el mouse */
+.client:hover {
+  transform: translateY(-5px); /* Elevar el cuadro */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Intensificar sombra */
+}
+
+/* Estilo para las imágenes dentro del cuadro */
+.client img {
+  max-width: 100%;
+  height: 200px; /* Asegurar que las imágenes no se salgan del cuadro */
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  mix-blend-mode: multiply;
+}
+
+  
+
+@media(max-width:991px) {
+  .menu {
+    padding: 20px;
+  }
+  .menu label {
+    display: initial;
+  }
+  .menu .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #303030;
+    display: none;
+  }
+  .menu .navbar ul li {
+    width: 100%;
+  }
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+  .header-content {
+    padding: 30px;
+  }
+  .header-info h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+
+  .frost {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+  .frost-1 {
+    width: 100%;
+    padding: 0;
+    order: 1;
+  }
+  .btn-2 h2 {
+    margin-bottom: 15px;
+  }
+  .btn-2 {
+    margin-bottom: 35px;
+  }
+  .frost-2 {
+    order: 2;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-1, .img-2, .img-3, .img-4{
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+  }
+  .footer {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer h3 {
+    margin: 30px;
+    font-size: 20px;
+  }
+  .footer .icon {
+    margin: 30px;
+  }
+}
